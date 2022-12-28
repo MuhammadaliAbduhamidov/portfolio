@@ -1,6 +1,6 @@
 import React from "react";
 import work1 from "./img/work1.jpg";
-import work2 from "./img/work1.jpg";
+import work2 from "./img/work2.jpg";
 import mahsulot from "./img/mahsulot.jpg";
 
 function Work() {
