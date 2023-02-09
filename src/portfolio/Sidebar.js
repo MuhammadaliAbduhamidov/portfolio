@@ -44,7 +44,9 @@ function Sidebar() {
         </ul>
         <div className="msg">
           <FaFacebookF />
-          <FaInstagram />
+          <a href="https://instagram.com/abdukhamidov___01?igshid=ZmZhODViOGI=">
+            <FaInstagram />
+          </a>
           <FaTelegram />
           <FaLinkedin />
         </div>

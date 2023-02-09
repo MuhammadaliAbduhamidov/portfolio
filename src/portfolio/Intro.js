@@ -48,10 +48,9 @@ function Intro() {
           <div className="rubberBand">i</div>
         </div>
         <h2>
-          I am
           <Typewriter
             options={{
-              strings: [" Front-End Developer"],
+              strings: [" Front-End Developer", "Math Teacher"],
               autoStart: true,
               loop: true,
             }}

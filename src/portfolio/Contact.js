@@ -12,7 +12,7 @@ function Contact() {
     {
       id: 1,
       title: "My Email",
-      text1: "abduhamidovmuhammadali81@gmail.com",
+      text1: "muhammadaliabduhamidov01@gmail.com",
       text2: "muhammadaliweb@gmail.com",
       svg: <MdOutlineMailOutline />,
     },
@@ -41,7 +41,7 @@ function Contact() {
         </div>
         <div className="contact-cards">
           {card.map((item) => (
-            <div className="contact-card">
+            <div key={item.id} className="contact-card">
               <div className="bg">{item.svg}</div>
               <h2>{item.title}</h2>
               <span>{item.text1}</span>
@@ -81,9 +81,7 @@ function Contact() {
             width="600"
             height="450"
             style={{ border: 0 }}
-            allowfullscreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>

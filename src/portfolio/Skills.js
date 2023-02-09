@@ -31,53 +31,53 @@ function Skills() {
             />
             <Animate
               element={
-                <div class="skill-bars">
-                  <div class="bar">
-                    <div class="info">
+                <div className="skill-bars">
+                  <div className="bar">
+                    <div className="info">
                       {" "}
                       <span>HTML</span>{" "}
                     </div>
-                    <div class="progress-line html">
+                    <div className="progress-line html">
                       {" "}
                       <span></span>{" "}
                     </div>
                   </div>
-                  <div class="bar">
-                    <div class="info">
+                  <div className="bar">
+                    <div className="info">
                       {" "}
                       <span>CSS/SCSS</span>{" "}
                     </div>
-                    <div class="progress-line css">
+                    <div className="progress-line css">
                       {" "}
                       <span></span>{" "}
                     </div>
                   </div>
-                  <div class="bar">
-                    <div class="info">
+                  <div className="bar">
+                    <div className="info">
                       {" "}
                       <span>JavaScript</span>{" "}
                     </div>
-                    <div class="progress-line JavaScript">
+                    <div className="progress-line JavaScript">
                       {" "}
                       <span></span>{" "}
                     </div>
                   </div>
-                  <div class="bar">
-                    <div class="info">
+                  <div className="bar">
+                    <div className="info">
                       {" "}
                       <span>React</span>{" "}
                     </div>
-                    <div class="progress-line react">
+                    <div className="progress-line react">
                       {" "}
                       <span></span>{" "}
                     </div>
                   </div>
-                  <div class="bar">
-                    <div class="info">
+                  <div className="bar">
+                    <div className="info">
                       {" "}
                       <span>Git/Github</span>{" "}
                     </div>
-                    <div class="progress-line git">
+                    <div className="progress-line git">
                       {" "}
                       <span></span>{" "}
                     </div>

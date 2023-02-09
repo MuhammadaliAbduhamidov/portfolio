@@ -1,9 +1,47 @@
-import React from "react";
-import aboutimg from "./img/about img.jpg";
+import React, { useEffect } from "react";
+import CV from "./img/Muhammadali CV.docx";
 import { FiDownload } from "react-icons/fi";
 import Animate from "./Animate";
+import TagCanvas from "tag-canvas";
 
 function About() {
+  const renderTagCloud = () => {
+    try {
+      TagCanvas.Start("myCanvas", "tags", {
+        textColour: "#682330",
+        outlineColour: "#682330",
+        reverse: false,
+        wheelZoom: false,
+        depth: 0.8,
+        maxSpeed: 0.08,
+      });
+    } catch (e) {
+      document.getElementById("myCanvasContainer").style.display = "none";
+    }
+  };
+
+  useEffect(() => {
+    renderTagCloud();
+  }, []);
+
+  const renderTagCloud2 = () => {
+    try {
+      TagCanvas.Start("myCanvas2", "tags", {
+        textColour: "#682330",
+        outlineColour: "#682330",
+        reverse: false,
+        wheelZoom: false,
+        depth: 0.8,
+        maxSpeed: 0.08,
+      });
+    } catch (e) {
+      document.getElementById("myCanvasContainer").style.display = "none";
+    }
+  };
+
+  useEffect(() => {
+    renderTagCloud2();
+  }, []);
   return (
     <div className="wrapper">
       <div></div>
@@ -12,13 +50,6 @@ function About() {
           <h1>About Me</h1>
         </div>
         <div className="about-in">
-          <Animate
-            element={
-              <div className="about-img">
-                <img src={aboutimg} alt="" />
-              </div>
-            }
-          />
           <Animate
             element={
               <div className="about-text">
@@ -51,17 +82,118 @@ function About() {
                     <li>
                       Phone: <span>+998 93 258 30 55</span>
                     </li>
-                    <li>
-                      Email: <span>abduhamidovmuhammadali81@gmail.com</span>
-                    </li>
+
                     <li>
                       Country: <span>Uzbekistan</span>
                     </li>
                   </ul>
                 </div>
-                <button className="btn">
-                  Download CV <FiDownload />
-                </button>
+                <ul>
+                  <li>
+                    Email: <span>muhammadaliabduhamidov01@gmail.com</span>
+                  </li>
+                </ul>
+                <a href={CV} download>
+                  <button className="btn">
+                    Download CV <FiDownload />
+                  </button>
+                </a>
+              </div>
+            }
+          />
+          <Animate
+            element={
+              <div>
+                <div id="myCanvasContainer">
+                  <canvas
+                    width="500"
+                    height="500"
+                    id="myCanvas"
+                    className="myCanvasDesktop"
+                  ></canvas>
+                  <canvas
+                    height="300"
+                    id="myCanvas2"
+                    className="myCanvasMobile"
+                  ></canvas>
+                </div>
+                <div id="tags">
+                  <ul>
+                    <li>
+                      <a href="/">HTML</a>
+                    </li>
+                    <li>
+                      <a href="/">CSS</a>
+                    </li>
+                    <li>
+                      <a href="/">Bootsrap</a>
+                    </li>
+                    <li>
+                      <a href="/">Javascript</a>
+                    </li>
+
+                    <li>
+                      <a href="/">React</a>
+                    </li>
+
+                    <li>
+                      <a href="/">Sass</a>
+                    </li>
+
+                    <li>
+                      <a href="/">Material UI</a>
+                    </li>
+                    <li>
+                      <a href="/">Git</a>
+                    </li>
+
+                    <li>
+                      <a href="/">React-icons</a>
+                    </li>
+
+                    <li>
+                      <a href="/">Github</a>
+                    </li>
+                    <li>
+                      <a href="/">HTML</a>
+                    </li>
+                    <li>
+                      <a href="/">CSS</a>
+                    </li>
+                    <li>
+                      <a href="/">Bootsrap</a>
+                    </li>
+                    <li>
+                      <a href="/">Javascript</a>
+                    </li>
+
+                    <li>
+                      <a href="/">React</a>
+                    </li>
+
+                    <li>
+                      <a href="/">Material UI</a>
+                    </li>
+                    <li>
+                      <a href="/">Git</a>
+                    </li>
+
+                    <li>
+                      <a href="/">React-icons</a>
+                    </li>
+
+                    <li>
+                      <a href="/">Github</a>
+                    </li>
+                    <li>
+                      <a href="/">JSON</a>
+                    </li>
+                    
+                    <li>
+                      <a href="/">SCSS</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             }
           />
