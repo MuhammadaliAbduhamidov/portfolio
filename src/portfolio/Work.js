@@ -2,8 +2,8 @@ import React from "react";
 import work1 from "./img/work1.jpg";
 import work2 from "./img/work2.jpg";
 import mahsulot from "./img/mahsulot.jpg";
+import youtube from "./img/youtube.jpg";
 import { FaGithub } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 function Work() {
   const works = [
@@ -29,6 +29,13 @@ function Work() {
       toGithub:
         "https://github.com/MuhammadaliAbduhamidov/masulot-admin-panel-front",
     },
+    {
+      id: 3,
+      img: youtube,
+      text: "This project was built using React",
+      to: "https://youtube-lime-five.vercel.app/",
+      toGithub: "https://github.com/MuhammadaliAbduhamidov/youtube",
+    },
   ];
   return (
     <div className="wrapper">
@@ -43,10 +50,10 @@ function Work() {
               <img src={item.img} alt="" />
               <div className="box">
                 <h1>{item.text}</h1>
-                <a href={item.to}>
+                <a target={"_blank"} href={item.to}>
                   <button>LEARN MORE</button>
                 </a>
-                <a href={item.toGithub}>
+                <a target={"_blank"} href={item.toGithub}>
                   <div className="box-end">
                     <span>Github code</span>
                     <FaGithub />

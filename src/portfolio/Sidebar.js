@@ -43,11 +43,15 @@ function Sidebar() {
           </li>
         </ul>
         <div className="msg">
-          <FaFacebookF />
+          <a href="https://www.facebook.com/profile.php?id=100089953702227">
+            <FaFacebookF />
+          </a>
           <a href="https://instagram.com/abdukhamidov___01?igshid=ZmZhODViOGI=">
             <FaInstagram />
           </a>
-          <FaTelegram />
+          <a href="https://t.me/Abdukhamidov_01">
+            <FaTelegram />
+          </a>
           <FaLinkedin />
         </div>
       </div>

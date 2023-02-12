@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import CV from "./img/Muhammadali CV.docx";
+import CV from "./img/Muhammadali CV.pdf";
 import { FiDownload } from "react-icons/fi";
 import Animate from "./Animate";
 import TagCanvas from "tag-canvas";
@@ -53,7 +53,7 @@ function About() {
           <Animate
             element={
               <div className="about-text">
-                <h2>I'm Muhammadali Abduhamidov</h2>
+                <h2>I'm Muhammadali</h2>
                 <p>
                   My name is Muhammadali, I am a Front-End Web Developer. I
                   studied for 1 year in the state library of Namangan region and
@@ -188,7 +188,7 @@ function About() {
                     <li>
                       <a href="/">JSON</a>
                     </li>
-                    
+
                     <li>
                       <a href="/">SCSS</a>
                     </li>
