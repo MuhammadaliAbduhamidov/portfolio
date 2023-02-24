@@ -9,6 +9,7 @@ import {
   FaLinkedin,
   FaBars,
   FaTimes,
+  FaGithub,
 } from "react-icons/fa";
 
 function Sidebar() {
@@ -52,7 +53,9 @@ function Sidebar() {
           <a href="https://t.me/Abdukhamidov_01">
             <FaTelegram />
           </a>
-          <FaLinkedin />
+          <a href="https://github.com/MuhammadaliAbduhamidov">
+            <FaGithub />
+          </a>
         </div>
       </div>
     </>

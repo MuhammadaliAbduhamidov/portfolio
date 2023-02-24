@@ -27,7 +27,7 @@ function Contact() {
       id: 3,
       title: "My Address",
       text1: "Andijon region  ",
-      text2: "Baliqchi distric",
+      text2: "Baliqchi district",
       svg: <MdLocationOn />,
     },
   ];
@@ -37,7 +37,21 @@ function Contact() {
       <div></div>
       <div className="contacts" id="contact">
         <div className="text">
-          <h1>Contact Me</h1>
+          <h1>
+            <div className="rubber__flex">
+              <div className="rubberBand">C</div>
+              <div className="rubberBand">o</div>
+              <div className="rubberBand">n</div>
+              <div className="rubberBand">t</div>
+              <div className="rubberBand">a</div>
+              <div className="rubberBand">c</div>
+              <div className="rubberBand">t</div>
+            </div>
+            <div className="rubber__flex">
+              <div className="rubberBand">M</div>
+              <div className="rubberBand">e</div>
+            </div>
+          </h1>
         </div>
         <div className="contact-cards">
           {card.map((item) => (

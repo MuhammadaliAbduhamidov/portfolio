@@ -1,4 +1,5 @@
 import React from "react";
+import nike from "./img/nike.jpg";
 import work1 from "./img/work1.jpg";
 import work2 from "./img/work2.jpg";
 import mahsulot from "./img/mahsulot.jpg";
@@ -9,20 +10,27 @@ function Work() {
   const works = [
     {
       id: 1,
+      img: nike,
+      text: "This project was built using HTML/CSS/JavaScript",
+      to: "https://nike-ten-lyart.vercel.app/",
+      toGithub: "https://github.com/MuhammadaliAbduhamidov/Nike",
+    },
+    {
+      id: 2,
       img: work1,
       text: "This project was built using React",
       to: "https://mix-info-three.vercel.app/",
       toGithub: "https://github.com/MuhammadaliAbduhamidov/mix-info",
     },
     {
-      id: 2,
+      id: 3,
       img: work2,
       text: "This project was built using JavaScript",
       to: "https://weather-rosy-iota.vercel.app/",
       toGithub: "https://github.com/MuhammadaliAbduhamidov/weather",
     },
     {
-      id: 3,
+      id: 4,
       img: mahsulot,
       text: "This project was built using React",
       to: "https://mahsulot-comni-admin-paneli.netlify.app/mahsulotlar",
@@ -30,7 +38,7 @@ function Work() {
         "https://github.com/MuhammadaliAbduhamidov/masulot-admin-panel-front",
     },
     {
-      id: 3,
+      id: 5,
       img: youtube,
       text: "This project was built using React",
       to: "https://youtube-lime-five.vercel.app/",
@@ -42,7 +50,19 @@ function Work() {
       <div></div>
       <div className="works" id="work">
         <div className="text">
-          <h1>My Works</h1>
+          <h1>
+            <div className="rubber__flex">
+              <div className="rubberBand">M</div>
+              <div className="rubberBand">y</div>
+            </div>
+            <div className="rubber__flex">
+              <div className="rubberBand">W</div>
+              <div className="rubberBand">o</div>
+              <div className="rubberBand">r</div>
+              <div className="rubberBand">k</div>
+              <div className="rubberBand">s</div>
+            </div>
+          </h1>
         </div>
         <div className="work">
           {works.map((item) => (

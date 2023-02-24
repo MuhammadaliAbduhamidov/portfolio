@@ -11,14 +11,28 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
+.loader {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  z-index: 11;
+}
 :root {
   --main-color: #e38528;
 }
 .text h1 {
   color: #e38528;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 600;
   position: relative;
+  display: flex;
+  gap: 20px;
 }
 .wrapper {
   display: grid;
@@ -145,7 +159,7 @@
   align-items: flex-start;
   padding: 0 3rem;
 }
-.rubber__flex {
+.intro .rubber__flex {
   display: flex;
 }
 .intro h3 {
@@ -156,7 +170,7 @@
 .rubberBand:hover {
   animation: rubberBand 0.8s linear;
 }
-.rubberBand {
+.intro .rubberBand {
   font-size: 4rem;
   text-transform: uppercase;
   font-weight: 600;
@@ -225,6 +239,9 @@
   position: relative;
   display: flex;
   justify-content: center;
+}
+.text .rubber__flex {
+  display: flex;
 }
 .text h1::before {
   content: "";
@@ -408,16 +425,16 @@
   }
 }
 .html span {
-  width: 84%;
+  width: 95%;
 }
 .css span {
   width: 92%;
 }
 .JavaScript span {
-  width: 70%;
+  width: 80%;
 }
 .react span {
-  width: 80%;
+  width: 85%;
 }
 .git span {
   width: 86%;
@@ -428,22 +445,25 @@
   }
 }
 .html span::after {
-  content: "84%";
+  content: "95%";
 }
 .css span::after {
   content: "92%";
 }
 .JavaScript span::after {
-  content: "70%";
+  content: "80%";
 }
 .react span::after {
-  content: "80%";
+  content: "85%";
 }
 .git span::after {
   content: "86%";
 }
 
 /* work */
+.works {
+  margin-top: 100px;
+}
 .work {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

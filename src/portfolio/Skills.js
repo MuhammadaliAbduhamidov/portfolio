@@ -10,7 +10,20 @@ function Skills() {
         <div></div>
         <div className="skills" id="skill">
           <div className="text">
-            <h1>My Skills</h1>
+            <h1>
+              <div className="rubber__flex">
+                <div className="rubberBand">M</div>
+                <div className="rubberBand">y</div>
+              </div>
+              <div className="rubber__flex">
+                <div className="rubberBand">S</div>
+                <div className="rubberBand">k</div>
+                <div className="rubberBand">i</div>
+                <div className="rubberBand">l</div>
+                <div className="rubberBand">l</div>
+                <div className="rubberBand">s</div>
+              </div>
+            </h1>
           </div>
           <div className="skill">
             <Animate

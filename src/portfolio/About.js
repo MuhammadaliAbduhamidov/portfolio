@@ -47,7 +47,19 @@ function About() {
       <div></div>
       <div className="about" id="about">
         <div className="text">
-          <h1>About Me</h1>
+          <h1>
+            <div className="rubber__flex">
+              <div className="rubberBand">A</div>
+              <div className="rubberBand">b</div>
+              <div className="rubberBand">o</div>
+              <div className="rubberBand">u</div>
+              <div className="rubberBand">t</div>
+            </div>
+            <div className="rubber__flex">
+              <div className="rubberBand">m</div>
+              <div className="rubberBand">e</div>
+            </div>
+          </h1>
         </div>
         <div className="about-in">
           <Animate
@@ -63,7 +75,7 @@ function About() {
                 <div className="about-item">
                   <ul>
                     <li>
-                      Age: <span>21</span>
+                      Age: <span>22</span>
                     </li>
                     <li>
                       Gender: <span>Male</span>
