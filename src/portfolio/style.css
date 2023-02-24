@@ -679,7 +679,7 @@ form button {
     width: 100%;
   }
   .work {
-    display: none;
+    grid-template-columns: repeat(2, 1fr);
   }
   .contact-cards {
     grid-template-columns: 100%;
@@ -729,7 +729,6 @@ form button {
     width: 32px;
     height: 32px;
     font-size: 22px;
-    z-index: 1000;
   }
   .scroltop {
     width: 32px;
@@ -738,6 +737,10 @@ form button {
   }
   .intro {
     padding: 2rem 1rem;
+  }
+  .intro .rubberBand {
+    font-size: 3rem;
+    line-height: 3rem;
   }
   .intro h3 {
     font-size: 1.5rem;
@@ -761,7 +764,7 @@ form button {
     font-size: 14px;
   }
   .text h1 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
   .about,
   .skills,
@@ -789,11 +792,23 @@ form button {
     box-shadow: none;
     padding: 0 0;
   }
+  .work {
+    grid-template-columns: 100%;
+  }
   .contact-card h2 {
     font-size: 1.2rem;
   }
   .contact-card span,
   .footer p {
     font-size: 0.85rem;
+  }
+}
+@media (max-width: 400px) {
+  .intro .rubberBand {
+    font-size: 2.5rem;
+    line-height: 2rem;
+  }
+  .work {
+    padding: 1rem;
   }
 }
