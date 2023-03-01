@@ -4,6 +4,7 @@ import work1 from "./img/work1.jpg";
 import work2 from "./img/work2.jpg";
 import mahsulot from "./img/mahsulot.jpg";
 import youtube from "./img/youtube.jpg";
+import nuran from "./img/nuran.jpg";
 import { FaGithub } from "react-icons/fa";
 
 function Work() {
@@ -43,6 +44,13 @@ function Work() {
       text: "This project was built using React",
       to: "https://youtube-lime-five.vercel.app/",
       toGithub: "https://github.com/MuhammadaliAbduhamidov/youtube",
+    },
+    {
+      id: 6,
+      img: nuran,
+      text: "This project was built using React",
+      to: "https://nura.new.techdatasoft.uz/",
+      toGithub: "https://github.com/MuhammadaliAbduhamidov/nuran-group",
     },
   ];
   return (
