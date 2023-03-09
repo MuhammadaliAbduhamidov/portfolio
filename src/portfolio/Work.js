@@ -5,6 +5,7 @@ import work2 from "./img/work2.jpg";
 import mahsulot from "./img/mahsulot.jpg";
 import youtube from "./img/youtube.jpg";
 import nuran from "./img/nuran.jpg";
+import musicPlayer from "./img/music-player.jpg";
 import { FaGithub } from "react-icons/fa";
 
 function Work() {
@@ -18,20 +19,34 @@ function Work() {
     },
     {
       id: 2,
+      img: nuran,
+      text: "This project was built using React",
+      to: "https://nura.new.techdatasoft.uz/",
+      toGithub: "https://github.com/MuhammadaliAbduhamidov/nuran-group",
+    },
+    {
+      id: 3,
       img: work1,
       text: "This project was built using React",
       to: "https://mix-info-three.vercel.app/",
       toGithub: "https://github.com/MuhammadaliAbduhamidov/mix-info",
     },
     {
-      id: 3,
+      id: 4,
       img: work2,
       text: "This project was built using JavaScript",
       to: "https://weather-rosy-iota.vercel.app/",
       toGithub: "https://github.com/MuhammadaliAbduhamidov/weather",
     },
     {
-      id: 4,
+      id: 5,
+      img: musicPlayer,
+      text: "This project was built using JavaScript",
+      to: "https://music-player-beige-one.vercel.app/",
+      toGithub: "https://github.com/MuhammadaliAbduhamidov/music-player",
+    },
+    {
+      id: 6,
       img: mahsulot,
       text: "This project was built using React",
       to: "https://mahsulot-comni-admin-paneli.netlify.app/mahsulotlar",
@@ -39,18 +54,11 @@ function Work() {
         "https://github.com/MuhammadaliAbduhamidov/masulot-admin-panel-front",
     },
     {
-      id: 5,
+      id: 7,
       img: youtube,
       text: "This project was built using React",
       to: "https://youtube-lime-five.vercel.app/",
       toGithub: "https://github.com/MuhammadaliAbduhamidov/youtube",
-    },
-    {
-      id: 6,
-      img: nuran,
-      text: "This project was built using React",
-      to: "https://nura.new.techdatasoft.uz/",
-      toGithub: "https://github.com/MuhammadaliAbduhamidov/nuran-group",
     },
   ];
   return (
