@@ -1,11 +1,12 @@
 import React from "react";
 import nike from "./img/nike.jpg";
-import work1 from "./img/work1.jpg";
+import mixInfo from "./img/mix-info.jpg";
 import work2 from "./img/work2.jpg";
-import mahsulot from "./img/mahsulot.jpg";
+import toys from "./img/toys.jpg";
 import youtube from "./img/youtube.jpg";
 import nuran from "./img/nuran.jpg";
 import musicPlayer from "./img/music-player.jpg";
+import paint from "./img/paint.jpg";
 import { FaGithub } from "react-icons/fa";
 
 function Work() {
@@ -26,7 +27,7 @@ function Work() {
     },
     {
       id: 3,
-      img: work1,
+      img: mixInfo,
       text: "This project was built using React",
       to: "https://mix-info-three.vercel.app/",
       toGithub: "https://github.com/MuhammadaliAbduhamidov/mix-info",
@@ -47,11 +48,10 @@ function Work() {
     },
     {
       id: 6,
-      img: mahsulot,
+      img: toys,
       text: "This project was built using React",
-      to: "https://mahsulot-comni-admin-paneli.netlify.app/mahsulotlar",
-      toGithub:
-        "https://github.com/MuhammadaliAbduhamidov/masulot-admin-panel-front",
+      to: "https://toys-five.vercel.app",
+      toGithub: "https://github.com/MuhammadaliAbduhamidov/toys",
     },
     {
       id: 7,
@@ -59,6 +59,13 @@ function Work() {
       text: "This project was built using React",
       to: "https://youtube-lime-five.vercel.app/",
       toGithub: "https://github.com/MuhammadaliAbduhamidov/youtube",
+    },
+    {
+      id: 8,
+      img: paint,
+      text: "This project was built using javaScript",
+      to: "https://paint-dasturi.netlify.app/",
+      toGithub: "https://github.com/MuhammadaliAbduhamidov/paint",
     },
   ];
   return (

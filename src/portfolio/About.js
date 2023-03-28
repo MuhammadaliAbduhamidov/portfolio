@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import CV from "./img/Muhammadali CV.pdf";
+import CV from "./img/Muhammadali's resume.pdf";
 import { FiDownload } from "react-icons/fi";
 import Animate from "./Animate";
 import TagCanvas from "tag-canvas";
